@@ -1,0 +1,214 @@
+.section1{
+    /* background-color: aquamarine; */
+    height: 100vh;
+    overflow: hidden;
+}
+
+.carousel-btn{
+    border-radius: 10px;
+}
+
+.dots{
+    bottom: 40px !important;
+}
+.slick-dots li.slick-active button:before {
+    color: #24d69f !important;
+    opacity: 1 !important;
+}
+.slick-dots li button:before {
+    transform: scale(0.8);
+    background-color: #24d69f;
+    color:#24d69f !important;
+    opacity: 0.4 !important;
+}
+
+
+/* ---------------- buttons ---------------- */
+.slick-arrow.slick-prev, 
+.slick-arrow.slick-next{
+    width: 50px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.slick-prev{
+    left: 40px !important;
+}
+.slick-next{
+    right: 40px !important;
+}
+.slick-prev::before, .slick-next::before{
+    display: none;
+}
+.prevbtns, .nextbtns{
+    font-size: 2.5rem;
+    color: #24d69f !important;
+    display: none;
+}
+
+
+/* ------------------------------------------------- quote ----------------------------------------------------- */
+.homecontent{
+    color: white;
+    width: 80%;
+    margin: auto;
+    padding-top: 30vh;
+    text-align: left;
+}
+
+.homecontent h5{
+    word-spacing: 0.5rem;
+    letter-spacing: 0.1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.homecontent p{
+    font-size: 2.5rem;
+    width: 55%;
+    letter-spacing: 0.3rem;
+    word-spacing: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.homecontent button{
+    padding: 0.7rem 2.5rem;
+    border: none;
+    outline: none;
+    font-size: 1.1rem;
+    background-color: #24d69f;
+    font-weight: 500;
+    letter-spacing: 0.05rem;
+    font-family: 'Poppins', sans-serif;
+}
+.homecontent button a{
+    text-decoration: none;
+    color: white;
+}
+
+/* ------------------------------------------------- background images -------------------------------------------------- */
+.h1{
+    background: linear-gradient(rgba(0, 0, 0, 0.575), rgba(0, 0, 0, 0.575)), url('../../../../public/img/Deadspace.jpg');
+}
+.h2{
+    background: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.521)), url('../../../../public/img/fifa.jpg');
+}
+.h3{
+    background: linear-gradient(rgba(0, 0, 0, 0.459), rgba(0, 0, 0, 0.445)), url('../../../../public/img/battlefield.jpg');
+}
+.h4{
+    background: linear-gradient(rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.562)), url('../../../../public/img/pubg.jpg');
+}
+.h5{
+    background: linear-gradient(rgba(0, 0, 0, 0.696), rgba(0, 0, 0, 0.707)), url('../../../../public/img/gta6.jpg');
+}
+.h{
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+
+
+@media (max-width: 1000px) {
+    .slick-prev{
+        left: 20px !important;
+    }
+    .slick-next{
+        right: 20px !important;
+    }
+    .prevbtns, .nextbtns{
+        font-size: 2rem;
+    }
+}
+@media (max-width: 750px) {
+    .slick-prev{
+        left: 0px !important;
+    }
+    .slick-next{
+        right: 00px !important;
+    }
+    .prevbtns, .nextbtns{
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 500px) {
+    .slick-arrow.slick-prev, 
+.slick-arrow.slick-next{
+    display: none;
+}
+}
+@media (max-width: 1000px) {
+    .homecontent{
+        padding-top: 35vh;
+    }
+    .homecontent h5{
+        font-size: 0.9rem;
+    }
+    .homecontent p{
+        font-size: 1.9rem;
+        width: 60%;
+    }
+    .homecontent button{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 750px) {
+    .homecontent h5{
+        font-size: 0.8rem;
+    }
+    .homecontent p{
+        font-size: 1.6rem;
+        width: 70%;
+    }
+    .homecontent button{
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .homecontent{
+        padding-top: 30vh;
+        transform: translateY(-50%);
+    }
+    .homecontent h5{
+        font-size: 0.8rem;
+    }
+    .homecontent p{
+        font-size: 1.2rem;
+    }
+    .homecontent button{
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .homecontent{
+        padding-top: 0vh;
+        margin-top: 40vh;
+    }
+    .homecontent h5{
+        font-size: 1rem;
+    }
+    .homecontent p{
+        font-size: 1.3rem;
+        width: 100%;
+    }
+    .homecontent button{
+        font-size: 0.9rem;
+        padding: 0.5rem 2rem;
+    }
+    .section1{
+        height: 80vh;
+    }
+    .dots{
+        bottom: 180px !important;
+    }
+}

@@ -1,0 +1,102 @@
+.footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(102, 102, 102);
+    padding: 1rem 0;
+}
+.footercontainer{
+    display: flex;
+    justify-content: space-evenly;
+    width: 90vw;
+    margin: auto;
+}
+.box{
+    padding: 1rem 0;
+    width: 210px;
+}
+.footer-heading{
+    color: #24d69f;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-decoration: underline;
+}
+.footer-box1-links{
+    color: #f0f0f0;
+    text-align: center;
+}
+.footer-box2-links , .footer-box3-links{
+    text-align: center;
+    color: #f0f0f0;
+    margin-bottom: 0.7rem;
+}
+.footer-box4-links-child a{
+    text-decoration: none;
+}
+.mail{
+    font-size: 0.8rem;
+    color: white;
+    line-height: 20px;
+    padding-left: 15px;
+}
+.footer-box4-icon{
+    color: #24d69f;
+    font-size: 1.2rem;
+}
+.footer-box4-links-child{
+    margin-bottom: 0.7rem;
+}
+.icons{
+    display: flex;
+    justify-content: space-evenly;
+}
+.social-profiles{
+    margin-top: 0.2rem;
+    color: #24d69f;
+    font-size: 1.5rem;
+}
+.footer-content{
+    text-align: center;
+    color: #f0f0f0;
+}
+/* ------------------Media Quries------------------ */
+@media (max-width:850px) {
+    .footercontainer{
+        width: 80vw;
+    }
+    .footer-box4-icon{
+        font-size: 1rem;
+    }
+    .mail{
+        font-size: 0.5rem;
+    }
+    .social-profiles{
+        font-size: 1.3rem;
+    }
+}
+@media (max-width:700px) {
+.footercontainer{
+        display: block;
+    }
+    .box{
+        width: 100%;
+    }
+    .footer-box4-icon{
+        font-size: 0.9rem;
+    }
+    .mail{
+        font-size: 0.9rem;
+    }
+    .social-profiles{
+        font-size: 1rem;
+    }
+    .footer-box4-links-child{
+        text-align: center;
+    }
+    .footer-content{
+        padding: 2rem;
+    }
+}

@@ -1,0 +1,223 @@
+/* -------------------------------------------------- */
+/* ---------------------Main CSS--------------------- */
+.login{
+    border: 2px solid black;
+    width: 100vw;
+    height: 100vh;
+}
+.lscontainer{
+    width: 100%;
+    height: 100%;
+    position: absolute;top: 0;left: 0;
+    z-index: 2;
+    background-color: #ccfced;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+
+/* -------------------------------------------------- */
+/* -----------------overflow Box------------------ */
+.lsoverflow{
+    background-color: #6300ee7b;
+    width: 2000px; height: 100%;
+    position: absolute;
+    top: 0;left: 50%;
+    display: flex; align-items: center;
+    transition: 1.1s ease-out;
+    z-index: 2;
+}
+.lsoverflowbox{
+    color: #fff;
+    width: 400px;
+    position: absolute;
+    padding:0 2rem;
+    text-align: left;
+    transition: 1.1s ease-out;
+    left: 0;
+}
+.lsoverflowbox h1{
+    margin-bottom: 1rem;
+    font-size: 30px;
+}
+.lsoverflowbox p{
+    font-size: 17px;
+}
+/* -------------------------------------------------- */
+/* -----------------FORM--------------------- */
+.lsform{
+    width: 60%;
+}
+.lsform input{
+    width: 100%;
+    padding: 0.7rem;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+}
+.lsform input:focus::placeholder{
+    color: transparent;
+}
+
+/* -------------------------------------------------- */
+/* ----------------------Buttons----------------------- */
+.lsbtns{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.lsbtn{
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+.lsdark{
+    border: 1px solid #fff;
+    background: linear-gradient(to top, #9457e975, #6300ee);
+    color: white;
+}
+.lslight{
+    border: 1px solid #6300ee;
+    background-color: white;
+    color: #6300ee;
+}
+.ls-icon{
+    display: flex;
+    justify-content: space-between ;
+}
+.ls-icons{
+    padding: 0 20px;
+    color: blue;
+    font-size: 1.5rem;
+}
+
+/* -------------------------------------------------- */
+/* ------------ Alert message ---------------- */
+.alert{
+    position: absolute;
+    top: 2%; left: 50%;
+    transform: translateX(-50%);
+    background-color: #f77f00;
+    color: #eae2b7;
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding: 0.5rem 1.5rem;
+    z-index: 10;
+}
+/* -------------------------------------------------- */
+/* -----------------------Login-Signup Container----------------------- */
+.lsmain{
+    background-color: #f1f1f1;
+    display: flex;
+    box-shadow: 0 0  20px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    height: 75vh;width: 80vw;
+    margin: auto;
+}
+.lsright{
+    display: flex; flex-direction: column; align-items: center; justify-content: space-evenly;
+    height: 100%;width: 50%;
+    opacity: 0;
+    transition:0.5s ease-in-out;
+}
+.lsimg{
+    width: 60px;
+}
+.lsleft{
+    display: flex; flex-direction: column; align-items: center; justify-content: space-evenly;
+    transition: 0.5s ease-in-out;
+    height: 100%;width: 50%;
+}
+/* -------------------------------------------------- */
+
+.lsmaintransition .lsoverflow{
+    transform: translateX(-100%);
+}
+.lsmaintransition .lsoverflowbox{
+    left: 100%;
+    transform: translateX(-400px);
+}
+.lsmaintransition .lsright{
+    opacity: 1;
+}
+.lsmaintransition .lsleft{
+    opacity: 0;
+}
+
+
+/* --------------------------------------------------- */
+/* ------------------MEDIA QURIES------------------------ */
+@media (max-width:950px) {
+    .lsoverflowbox{
+        width: 350px;
+        padding: 0 1.5rem;
+    }
+    .lsoverflowbox h1{
+        font-size: 20px;
+    }
+    .lsoverflowbox p{
+        font-size: 10px;
+    }
+}
+@media (max-width:700px) {
+    .lscontainer{
+        overflow: hidden;
+        height: fit-content;
+    }
+    .lsmaintransition .lsoverflow{
+    transform: translate(0, -145%);
+    }
+    .lsmaintransition .lsoverflowbox{
+    left: 0;
+    transform: translate(0, -170px);
+    top: 100%;
+    }
+    .lsoverflow{
+        width: 100%;
+        height: 450px;
+        left: 0;
+        top: 450px;
+    }
+    .lsoverflowbox{
+        width: 100%;
+        text-align: center;
+        top: 0;
+        padding: 2rem 0;
+    }
+    .lsoverflowbox h1{
+    font-size: 28px;
+    }
+    .lsoverflowbox p{
+    font-size: 20px;
+    }
+    .lsmain{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        width: 100%;
+    }
+    .lsleft{
+        width: 90%; height: 450px;
+    }
+    .lsright{
+        width: 90%; height: 350px;
+    }
+    .lsmaintransition .lsright{
+        height: 450px;
+    }
+    .lsmaintransition .lsleft{
+        height: 250px;
+    }
+    .lsform{
+        width: 80%;
+    }
+}
